@@ -3,7 +3,8 @@ node{
   echo 'hello world'
   }
   stage('Run Project'){
-   sh 'mvn test'
+    tool name: 'MAVEN_3.6.1', type: 'maven'
+    sh 'mvn test'
   }
 
 }
